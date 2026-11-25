@@ -1,6 +1,6 @@
 # System Design 101 — implementation planning
 
-Status: implementation plan approved 2026-11-25. Claude Code handoff ready; application implementation has not started. Selected stack: Astro + TypeScript + React lesson workspace + SVG + Pagefind; Cloudflare Pages Free; GoatCounter analytics.
+Status: implementation plan approved 2026-11-25. C00/C01 (canonical source + Astro foundation) delivered 2026-11-25; see `17-implementation-status.md`. Selected stack: Astro + TypeScript + React lesson workspace + SVG + Pagefind; Cloudflare Pages Free; GoatCounter analytics.
 
 ## Working agreement
 

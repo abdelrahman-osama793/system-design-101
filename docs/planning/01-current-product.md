@@ -2,6 +2,8 @@
 
 ## Observed implementation
 
+> Update 2026-11-25 (C00): the prototype now lives in `prototype/dist/` (moved byte-identical from root `dist/`); the root is the canonical Astro source. `.sites-checkout/` remains an untouched, untracked copy.
+
 The current project is a dependency-free HTML/CSS/JavaScript prototype in `dist/`, with corresponding files in `.sites-checkout/dist/`. Its six chapters teach short-link resolution, repeated traffic, a database bottleneck, cache-aside reads, freshness/TTL, and a recap. The source of truth between the two directories must be resolved before production development. Do not maintain two editable copies as a permanent architecture.
 
 There is no application backend, authentication service, persistent course database, payment system, or content editor in the inspected prototype. A hosting project is configured, but prior publication attempts were blocked by restricted network access. Do not assume it is live.

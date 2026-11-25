@@ -23,7 +23,8 @@
 | D-009 | Visual direction | Approved flexibility | Mix current prototype and references or propose new direction; final design not yet approved |
 | D-010 | Stack and provider | Approved direction | Astro/TypeScript/React/SVG/Pagefind; Cloudflare Pages Free; GoatCounter; package approved 2026-11-25 |
 | D-011 | Data/accessibility/analytics | Partly approved | Local progress approved; analytics unresolved; bilingual/mobile requirements retained |
-| D-012 | Implementation/release milestones | Open | No implementation until material questions and plan are settled |
+| D-012 | Implementation/release milestones | Approved | Staged C-tasks per `15-plan-review.md`; C00/C01 executed 2026-11-25 |
+| D-013 | Canonical source and toolchain | Approved | Root checkout is canonical, public GitHub repo `system-design-101`; prototype moved to `prototype/`; Node 24 LTS; owner answers 2026-11-25 |
 
 ## Discussion log
 
@@ -80,3 +81,19 @@ Approval state: all implementation-package choices are proposed; existing produc
 Owner response: “approve and continue”. Explicit approval covers the review package: 18 bilingual lessons across five sections, structured rebuild, Astro/TypeScript/React/SVG/Pagefind, Cloudflare Pages Free direction, GoatCounter bounded aggregate analytics, optional helpfulness/public GitHub issue feedback, mixed workshop/reference visual baseline, and first bilingual-lesson proof before mass authoring. C00/C01 is the first bounded Claude request. Account signup/paid services/deployment are not part of that task; future features remain deferred.
 
 Handoff actions: finalized approval records, added root `CLAUDE.md`, ready-to-use kickoff instructions, and an implementation status register. No website code or dependencies changed. No Claude process has been launched by this handoff.
+
+### C00/C01 execution — 2026-11-25
+
+Owner prompt: execute kickoff prompt 16; first “do not implement anything yet, ask questions first”, then “go, name it system-design-101, push initial commit”.
+
+Findings raised before implementation: root `.git/` was an empty folder; installed Node 20.20.2 cannot run current Astro 7 (needs ≥22.23.4); Astro's default `dist/` output collided with the prototype directory.
+
+Options and recommendation: Node 24 LTS vs 22 LTS vs staying on 20 (forces Astro 5); local repo vs local + public GitHub repo vs no Git; move prototype to `prototype/` vs non-default Astro outDir. Recommended Node 24, local repo, move prototype.
+
+Decision and status (approved): Node 24 LTS via nvm; `git init` at root plus public GitHub repo `system-design-101` with an initial commit pushed; prototype moved to `prototype/`. Defaults stated and not objected to: npm, TypeScript 6, no Vitest/CI workflow until C02.
+
+Approval evidence: owner selections in the question dialog, then “go, name it system-design-101, push initial commit”.
+
+Affected files: see `17-implementation-status.md` C00/C01 record.
+
+Next open questions: future of the existing Site identity / root `.openai/hosting.json`; book editions before C08.
